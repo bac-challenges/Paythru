@@ -8,11 +8,9 @@
 import Foundation
 
 extension Dictionary where Key == String, Value == Response {
-
     func save() {
         if let data = try? PropertyListEncoder().encode(self) {
             UserDefaults.standard.set(data, forKey: "local-cache")
-            print("Cache saved.")
         }
     }
 

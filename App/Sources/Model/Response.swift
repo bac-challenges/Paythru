@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct Response: Codable, Hashable, Equatable {
+struct Response: Codable, Hashable {
+
     let name: String
     let country: [Country]
 

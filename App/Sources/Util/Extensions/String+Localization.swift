@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  String+Localization.swift
 //  Paythru
 //
 //  Created by emile on 24/08/2022.
@@ -7,7 +7,6 @@
 
 import Foundation
 
-// MARK: - Localization
 public extension String {
     var localized: String {
         NSLocalizedString(self, comment: "")

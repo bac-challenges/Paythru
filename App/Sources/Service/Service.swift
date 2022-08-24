@@ -8,11 +8,6 @@
 import Foundation
 import Combine
 
-// MARK: - EndPoint
-protocol EndPointProtocol {
-    var url: URL? { get }
-}
-
 // MARK: - Service
 protocol Service {
     func get(_ url: URL) -> AnyPublisher<Data, Error>
@@ -23,19 +18,6 @@ struct RemoteService: Service {
         return URLSession.shared.dataTaskPublisher(for: url, cachedResponseOnError: true)
             .map(\.data)
             .eraseToAnyPublisher()
-    }
-}
-
-struct LocalService: Service {
-    func get(_ url: URL) -> AnyPublisher<Data, Error> {
-
-        guard let data = try? Data(contentsOf: url) else {
-            fatalError("BAD DATA")
-        }
-
-        return Future<Data, Error> { promise in
-            promise(.success(data))
-        }.eraseToAnyPublisher()
     }
 }
 
