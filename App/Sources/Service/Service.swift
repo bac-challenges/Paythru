@@ -21,6 +21,17 @@ struct RemoteService: Service {
     }
 }
 
+struct MockService: Service {
+
+    let data: Data
+
+    func get(_ url: URL) -> AnyPublisher<Data, Error> {
+        return Future<Data, Error> { promise in
+            promise(.success(data))
+        }.eraseToAnyPublisher()
+    }
+}
+
 // MARK: - Injection
 private struct ServiceKey: InjectionKey {
     static var currentValue: Service = RemoteService()
