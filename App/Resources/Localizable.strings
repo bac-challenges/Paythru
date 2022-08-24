@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  Paythru
+
+  Created by emile on 24/08/2022.
+  
+*/
+
+ENTER_YOUR_NAME = "Enter your name...";
+SEARCH = "Search";
