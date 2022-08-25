@@ -7,7 +7,18 @@
 
 import SwiftUI
 
-struct SearchBar: View {
+struct SearchBar<Content: View>: View {
+
+    @ObservedObject
+    var viewModel: ViewModel
+
+    let content: Content
+
+    init(viewModel: ViewModel, @ViewBuilder content: () -> Content) {
+        self.viewModel = viewModel
+        self.content = content()
+    }
+
     var body: some View {
         HStack {
             TextField(~"ENTER_YOUR_NAME", text: $viewModel.name)
@@ -24,13 +35,15 @@ struct SearchBar: View {
                     .opacity(viewModel.opacity)
                     .padding(.trailing, 5)
                 }
-            
+
             Button(~"SEARCH", action: viewModel.search)
                 .opacity(viewModel.opacity)
                 .padding(.trailing, viewModel.padding)
                 .animation(.easeIn, value: viewModel.opacity)
                 .animation(.easeIn, value: viewModel.padding)
-                .sheet(isPresented: $viewModel.showingSheet) { results() }
+                .sheet(isPresented: $viewModel.showingSheet) {
+                    content
+                }
         }
     }
 }
