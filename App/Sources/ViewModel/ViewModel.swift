@@ -55,6 +55,10 @@ final class ViewModel: ObservableObject {
         showFullHistory ? cache.toArray():Array(cache.toArray()[0...2])
     }
 
+    var historyCount: Int {
+        cache.count - 3
+    }
+
     var isActive: Bool {
         name != ""
     }

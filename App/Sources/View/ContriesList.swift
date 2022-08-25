@@ -21,16 +21,15 @@ struct ContriesList<Content: View>: View {
 
     var body: some View {
         NavigationView {
-            List {
-                content
-            }
-            .listStyle(.insetGrouped)
-            .navigationBarTitleDisplayMode(.large)
-            .toolbar {
-                ToolbarItem(placement: .confirmationAction) {
-                    Button(~"CLOSE", action: viewModel.close)
+            List { content }
+                .listStyle(.insetGrouped)
+                .navigationTitle(viewModel.name)
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar {
+                    ToolbarItem(placement: .confirmationAction) {
+                        Button(~"CLOSE", action: viewModel.close)
+                    }
                 }
-            }
         }
     }
 }

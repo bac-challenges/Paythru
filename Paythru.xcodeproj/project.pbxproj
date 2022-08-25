@@ -29,6 +29,8 @@
 		60E347AF28B722BB007B190D /* SearchSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E347AE28B722BB007B190D /* SearchSection.swift */; };
 		60E347B128B7234D007B190D /* HistorySection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E347B028B7234D007B190D /* HistorySection.swift */; };
 		60E347B428B72477007B190D /* ContriesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E347B328B72477007B190D /* ContriesList.swift */; };
+		60E347B628B72C28007B190D /* SectionContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E347B528B72C28007B190D /* SectionContainer.swift */; };
+		60E347B828B75305007B190D /* SearchRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E347B728B75305007B190D /* SearchRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		60E347AE28B722BB007B190D /* SearchSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSection.swift; sourceTree = "<group>"; };
 		60E347B028B7234D007B190D /* HistorySection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistorySection.swift; sourceTree = "<group>"; };
 		60E347B328B72477007B190D /* ContriesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContriesList.swift; sourceTree = "<group>"; };
+		60E347B528B72C28007B190D /* SectionContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionContainer.swift; sourceTree = "<group>"; };
+		60E347B728B75305007B190D /* SearchRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,8 +230,10 @@
 		60E347B228B72460007B190D /* ListSections */ = {
 			isa = PBXGroup;
 			children = (
+				60E347B528B72C28007B190D /* SectionContainer.swift */,
 				60E347AE28B722BB007B190D /* SearchSection.swift */,
 				60E347B028B7234D007B190D /* HistorySection.swift */,
+				60E347B728B75305007B190D /* SearchRow.swift */,
 			);
 			path = ListSections;
 			sourceTree = "<group>";
@@ -372,7 +378,9 @@
 				60E3478728B673D8007B190D /* Country.swift in Sources */,
 				60E347AA28B70CE8007B190D /* Label+Section.swift in Sources */,
 				60E3477228B66B1F007B190D /* CancelBag.swift in Sources */,
+				60E347B828B75305007B190D /* SearchRow.swift in Sources */,
 				60E347B128B7234D007B190D /* HistorySection.swift in Sources */,
+				60E347B628B72C28007B190D /* SectionContainer.swift in Sources */,
 				60E347B428B72477007B190D /* ContriesList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

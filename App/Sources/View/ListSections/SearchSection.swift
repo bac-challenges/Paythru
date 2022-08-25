@@ -13,22 +13,8 @@ struct SearchSection: View {
     var viewModel: ViewModel
 
     var body: some View {
-        if viewModel.items.isEmpty {
-            Label(.search, isError: true).navigationTitle(viewModel.name)
-        } else {
-            Section {
-                ForEach(viewModel.items, id: \.self) { item in
-                    withAnimation {
-                        HStack {
-                            Text(~"COUNTRY" + ": \(item.code)").foregroundColor(.secondary)
-                            Spacer()
-                            Text(String(format: ~"PROBABILITY", item.probability)).foregroundColor(.secondary)
-                        }.navigationTitle(viewModel.name)
-                    }
-                }
-            } header: {
-                Label(.search)
-            }
+        SectionContainer(items: viewModel.items, type: .search) { item in
+            SearchRow(item: item)
         }
     }
 }
