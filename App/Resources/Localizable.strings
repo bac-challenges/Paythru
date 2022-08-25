@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  Paythru
+
+  Created by emile on 24/08/2022.
+  
+*/
+
+ENTER_YOUR_NAME = "Enter your name...";
+SEARCH = "Search";
+CLOSE = "Close";
+RESULTS = "Results";
+HISTORY = "History";
+COUNTRY = "Country";
+PROBABILITY = "Probability: %.2f";
+NO_RESULTS = "No results were found for this name.";
+NO_HISTORY = "No previous searches found.";
+SHOW_FULL_HISTORY = "Show all items";
+SHOW_SHORT_HISTORY = "Show less items";

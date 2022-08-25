@@ -8,21 +8,81 @@
 
 /* Begin PBXBuildFile section */
 		60E3475E28B662D1007B190D /* PaythruApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E3475D28B662D1007B190D /* PaythruApp.swift */; };
-		60E3476028B662D1007B190D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E3475F28B662D1007B190D /* ContentView.swift */; };
 		60E3476228B662D3007B190D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60E3476128B662D3007B190D /* Assets.xcassets */; };
 		60E3476C28B6638D007B190D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 60E3476B28B6638D007B190D /* README.md */; };
+		60E3477228B66B1F007B190D /* CancelBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E3477028B66B1F007B190D /* CancelBag.swift */; };
+		60E3477328B66B1F007B190D /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E3477128B66B1F007B190D /* Injection.swift */; };
+		60E3477628B66CE4007B190D /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E3477528B66CE4007B190D /* Service.swift */; };
+		60E3477928B66D41007B190D /* URLSession+Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E3477828B66D41007B190D /* URLSession+Cache.swift */; };
+		60E3477C28B66E3F007B190D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E3477B28B66E3F007B190D /* ViewModel.swift */; };
+		60E3478128B66EEF007B190D /* Bundle+Wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E3478028B66EEF007B190D /* Bundle+Wrapper.swift */; };
+		60E3478328B66F0F007B190D /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E3478228B66F0F007B190D /* Response.swift */; };
+		60E3478728B673D8007B190D /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E3478628B673D8007B190D /* Country.swift */; };
+		60E3478928B674AE007B190D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 60E3478828B674AE007B190D /* Localizable.strings */; };
+		60E3478C28B67599007B190D /* Dictionary+Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E3478B28B67599007B190D /* Dictionary+Cache.swift */; };
+		60E3479128B68A1F007B190D /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E3479028B68A1F007B190D /* String+Localization.swift */; };
+		60E3479A28B69C78007B190D /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E3479928B69C78007B190D /* Tests.swift */; };
+		60E347A828B70A71007B190D /* SectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E347A728B70A71007B190D /* SectionType.swift */; };
+		60E347AA28B70CE8007B190D /* Label+Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E347A928B70CE8007B190D /* Label+Section.swift */; };
+		60E347AD28B71AA2007B190D /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E347AC28B71AA2007B190D /* SearchBar.swift */; };
+		60E347AF28B722BB007B190D /* SearchSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E347AE28B722BB007B190D /* SearchSection.swift */; };
+		60E347B128B7234D007B190D /* HistorySection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E347B028B7234D007B190D /* HistorySection.swift */; };
+		60E347B428B72477007B190D /* ContriesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E347B328B72477007B190D /* ContriesList.swift */; };
+		60E347B628B72C28007B190D /* SectionContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E347B528B72C28007B190D /* SectionContainer.swift */; };
+		60E347B828B75305007B190D /* SearchRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E347B728B75305007B190D /* SearchRow.swift */; };
+		60E347BC28B7A58A007B190D /* Array+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E347BB28B7A58A007B190D /* Array+Utils.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		60E3479B28B69C78007B190D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60E3475228B662D1007B190D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60E3475928B662D1007B190D;
+			remoteInfo = Paythru;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		60E3475A28B662D1007B190D /* Paythru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paythru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60E3475D28B662D1007B190D /* PaythruApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaythruApp.swift; sourceTree = "<group>"; };
-		60E3475F28B662D1007B190D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		60E3476128B662D3007B190D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60E3476B28B6638D007B190D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		60E3477028B66B1F007B190D /* CancelBag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelBag.swift; sourceTree = "<group>"; };
+		60E3477128B66B1F007B190D /* Injection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
+		60E3477528B66CE4007B190D /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		60E3477828B66D41007B190D /* URLSession+Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSession+Cache.swift"; sourceTree = "<group>"; };
+		60E3477A28B66DA8007B190D /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		60E3477B28B66E3F007B190D /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		60E3478028B66EEF007B190D /* Bundle+Wrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Wrapper.swift"; sourceTree = "<group>"; };
+		60E3478228B66F0F007B190D /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		60E3478628B673D8007B190D /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		60E3478828B674AE007B190D /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		60E3478A28B674CE007B190D /* Paythru-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Paythru-Info.plist"; sourceTree = "<group>"; };
+		60E3478B28B67599007B190D /* Dictionary+Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Cache.swift"; sourceTree = "<group>"; };
+		60E3479028B68A1F007B190D /* String+Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
+		60E3479728B69C77007B190D /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		60E3479928B69C78007B190D /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		60E347A728B70A71007B190D /* SectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionType.swift; sourceTree = "<group>"; };
+		60E347A928B70CE8007B190D /* Label+Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Label+Section.swift"; sourceTree = "<group>"; };
+		60E347AC28B71AA2007B190D /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		60E347AE28B722BB007B190D /* SearchSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSection.swift; sourceTree = "<group>"; };
+		60E347B028B7234D007B190D /* HistorySection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistorySection.swift; sourceTree = "<group>"; };
+		60E347B328B72477007B190D /* ContriesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContriesList.swift; sourceTree = "<group>"; };
+		60E347B528B72C28007B190D /* SectionContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionContainer.swift; sourceTree = "<group>"; };
+		60E347B728B75305007B190D /* SearchRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRow.swift; sourceTree = "<group>"; };
+		60E347BB28B7A58A007B190D /* Array+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Utils.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		60E3475728B662D1007B190D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60E3479428B69C77007B190D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,6 +97,7 @@
 			children = (
 				60E3476B28B6638D007B190D /* README.md */,
 				60E3475C28B662D1007B190D /* App */,
+				60E3479828B69C78007B190D /* Tests */,
 				60E3475B28B662D1007B190D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				60E3475A28B662D1007B190D /* Paythru.app */,
+				60E3479728B69C77007B190D /* Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,7 +124,11 @@
 		60E3476D28B664AD007B190D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				60E3475F28B662D1007B190D /* ContentView.swift */,
+				60E3477E28B66EA5007B190D /* View */,
+				60E3477428B66C9D007B190D /* ViewModel */,
+				60E3477D28B66E80007B190D /* Model */,
+				60E3479228B69A92007B190D /* Service */,
+				60E3476F28B66AFE007B190D /* Util */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -70,9 +136,106 @@
 		60E3476E28B664C1007B190D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				60E3478A28B674CE007B190D /* Paythru-Info.plist */,
 				60E3476128B662D3007B190D /* Assets.xcassets */,
+				60E3477A28B66DA8007B190D /* Config.xcconfig */,
+				60E3478828B674AE007B190D /* Localizable.strings */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		60E3476F28B66AFE007B190D /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				60E347AB28B71997007B190D /* Styles */,
+				60E3477F28B66EDB007B190D /* Wrappers */,
+				60E3477728B66D33007B190D /* Extensions */,
+				60E3477028B66B1F007B190D /* CancelBag.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		60E3477428B66C9D007B190D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				60E3477B28B66E3F007B190D /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		60E3477728B66D33007B190D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				60E3477828B66D41007B190D /* URLSession+Cache.swift */,
+				60E3478B28B67599007B190D /* Dictionary+Cache.swift */,
+				60E347BB28B7A58A007B190D /* Array+Utils.swift */,
+				60E3479028B68A1F007B190D /* String+Localization.swift */,
+				60E347A928B70CE8007B190D /* Label+Section.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		60E3477D28B66E80007B190D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				60E3478228B66F0F007B190D /* Response.swift */,
+				60E3478628B673D8007B190D /* Country.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		60E3477E28B66EA5007B190D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				60E347AC28B71AA2007B190D /* SearchBar.swift */,
+				60E347B328B72477007B190D /* ContriesList.swift */,
+				60E347B228B72460007B190D /* ListSections */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		60E3477F28B66EDB007B190D /* Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				60E3478028B66EEF007B190D /* Bundle+Wrapper.swift */,
+				60E3477128B66B1F007B190D /* Injection.swift */,
+			);
+			path = Wrappers;
+			sourceTree = "<group>";
+		};
+		60E3479228B69A92007B190D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				60E3477528B66CE4007B190D /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		60E3479828B69C78007B190D /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				60E3479928B69C78007B190D /* Tests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		60E347AB28B71997007B190D /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				60E347A728B70A71007B190D /* SectionType.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		60E347B228B72460007B190D /* ListSections */ = {
+			isa = PBXGroup;
+			children = (
+				60E347B528B72C28007B190D /* SectionContainer.swift */,
+				60E347AE28B722BB007B190D /* SearchSection.swift */,
+				60E347B728B75305007B190D /* SearchRow.swift */,
+				60E347B028B7234D007B190D /* HistorySection.swift */,
+			);
+			path = ListSections;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +248,7 @@
 				60E3475628B662D1007B190D /* Sources */,
 				60E3475728B662D1007B190D /* Frameworks */,
 				60E3475828B662D1007B190D /* Resources */,
+				60E3478F28B687A2007B190D /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -94,6 +258,24 @@
 			productName = Paythru;
 			productReference = 60E3475A28B662D1007B190D /* Paythru.app */;
 			productType = "com.apple.product-type.application";
+		};
+		60E3479628B69C77007B190D /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60E3479D28B69C78007B190D /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				60E3479328B69C77007B190D /* Sources */,
+				60E3479428B69C77007B190D /* Frameworks */,
+				60E3479528B69C77007B190D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60E3479C28B69C78007B190D /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = 60E3479728B69C77007B190D /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -107,6 +289,10 @@
 				TargetAttributes = {
 					60E3475928B662D1007B190D = {
 						CreatedOnToolsVersion = 14.0;
+					};
+					60E3479628B69C77007B190D = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 60E3475928B662D1007B190D;
 					};
 				};
 			};
@@ -124,6 +310,7 @@
 			projectRoot = "";
 			targets = (
 				60E3475928B662D1007B190D /* Paythru */,
+				60E3479628B69C77007B190D /* Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -134,27 +321,92 @@
 			buildActionMask = 2147483647;
 			files = (
 				60E3476C28B6638D007B190D /* README.md in Resources */,
+				60E3478928B674AE007B190D /* Localizable.strings in Resources */,
 				60E3476228B662D3007B190D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		60E3479528B69C77007B190D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		60E3478F28B687A2007B190D /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint --fix --format\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		60E3475628B662D1007B190D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60E3476028B662D1007B190D /* ContentView.swift in Sources */,
+				60E3478C28B67599007B190D /* Dictionary+Cache.swift in Sources */,
+				60E3477C28B66E3F007B190D /* ViewModel.swift in Sources */,
+				60E347AD28B71AA2007B190D /* SearchBar.swift in Sources */,
+				60E3477928B66D41007B190D /* URLSession+Cache.swift in Sources */,
+				60E3477328B66B1F007B190D /* Injection.swift in Sources */,
+				60E3477628B66CE4007B190D /* Service.swift in Sources */,
+				60E3478128B66EEF007B190D /* Bundle+Wrapper.swift in Sources */,
+				60E347A828B70A71007B190D /* SectionType.swift in Sources */,
+				60E347AF28B722BB007B190D /* SearchSection.swift in Sources */,
+				60E3478328B66F0F007B190D /* Response.swift in Sources */,
+				60E3479128B68A1F007B190D /* String+Localization.swift in Sources */,
 				60E3475E28B662D1007B190D /* PaythruApp.swift in Sources */,
+				60E3478728B673D8007B190D /* Country.swift in Sources */,
+				60E347AA28B70CE8007B190D /* Label+Section.swift in Sources */,
+				60E3477228B66B1F007B190D /* CancelBag.swift in Sources */,
+				60E347B828B75305007B190D /* SearchRow.swift in Sources */,
+				60E347B128B7234D007B190D /* HistorySection.swift in Sources */,
+				60E347B628B72C28007B190D /* SectionContainer.swift in Sources */,
+				60E347B428B72477007B190D /* ContriesList.swift in Sources */,
+				60E347BC28B7A58A007B190D /* Array+Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60E3479328B69C77007B190D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60E3479A28B69C78007B190D /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		60E3479C28B69C78007B190D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60E3475928B662D1007B190D /* Paythru */;
+			targetProxy = 60E3479B28B69C78007B190D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
 		60E3476628B662D3007B190D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60E3477A28B66DA8007B190D /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -203,7 +455,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -257,7 +509,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -269,6 +521,7 @@
 		};
 		60E3476928B662D3007B190D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60E3477A28B66DA8007B190D /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -277,6 +530,7 @@
 				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "App/Resources/Paythru-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -291,7 +545,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.blueantcorp.Paythru;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 5.6;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -306,6 +560,7 @@
 				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "App/Resources/Paythru-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -320,8 +575,48 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.blueantcorp.Paythru;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.6;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		60E3479E28B69C78007B190D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blueantcorp.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Paythru.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Paythru";
+			};
+			name = Debug;
+		};
+		60E3479F28B69C78007B190D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blueantcorp.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Paythru.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Paythru";
 			};
 			name = Release;
 		};
@@ -342,6 +637,15 @@
 			buildConfigurations = (
 				60E3476928B662D3007B190D /* Debug */,
 				60E3476A28B662D3007B190D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60E3479D28B69C78007B190D /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60E3479E28B69C78007B190D /* Debug */,
+				60E3479F28B69C78007B190D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

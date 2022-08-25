@@ -9,9 +9,18 @@ import SwiftUI
 
 @main
 struct PaythruApp: App {
+
+    @StateObject
+    private var viewModel = ViewModel()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SearchBar(viewModel: viewModel) {
+                ContriesList(viewModel: viewModel) {
+                    SearchSection(viewModel: viewModel)
+                    HistorySection(viewModel: viewModel)
+                }
+            }.padding(20)
         }
     }
 }
