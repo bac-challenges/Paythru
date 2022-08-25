@@ -23,6 +23,9 @@
 		60E3478C28B67599007B190D /* Dictionary+Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E3478B28B67599007B190D /* Dictionary+Cache.swift */; };
 		60E3479128B68A1F007B190D /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E3479028B68A1F007B190D /* String+Localization.swift */; };
 		60E3479A28B69C78007B190D /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E3479928B69C78007B190D /* Tests.swift */; };
+		60E347A828B70A71007B190D /* SectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E347A728B70A71007B190D /* SectionType.swift */; };
+		60E347AA28B70CE8007B190D /* Label+Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E347A928B70CE8007B190D /* Label+Section.swift */; };
+		60E347AD28B71AA2007B190D /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E347AC28B71AA2007B190D /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,9 @@
 		60E3479028B68A1F007B190D /* String+Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
 		60E3479728B69C77007B190D /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60E3479928B69C78007B190D /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		60E347A728B70A71007B190D /* SectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionType.swift; sourceTree = "<group>"; };
+		60E347A928B70CE8007B190D /* Label+Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Label+Section.swift"; sourceTree = "<group>"; };
+		60E347AC28B71AA2007B190D /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +137,7 @@
 		60E3476F28B66AFE007B190D /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				60E347AB28B71997007B190D /* Styles */,
 				60E3477F28B66EDB007B190D /* Wrappers */,
 				60E3477728B66D33007B190D /* Extensions */,
 				60E3477028B66B1F007B190D /* CancelBag.swift */,
@@ -152,6 +159,7 @@
 				60E3477828B66D41007B190D /* URLSession+Cache.swift */,
 				60E3478B28B67599007B190D /* Dictionary+Cache.swift */,
 				60E3479028B68A1F007B190D /* String+Localization.swift */,
+				60E347A928B70CE8007B190D /* Label+Section.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -169,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				60E3475F28B662D1007B190D /* ContentView.swift */,
+				60E347AC28B71AA2007B190D /* SearchBar.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -196,6 +205,14 @@
 				60E3479928B69C78007B190D /* Tests.swift */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		60E347AB28B71997007B190D /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				60E347A728B70A71007B190D /* SectionType.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,15 +341,18 @@
 			files = (
 				60E3478C28B67599007B190D /* Dictionary+Cache.swift in Sources */,
 				60E3477C28B66E3F007B190D /* ViewModel.swift in Sources */,
+				60E347AD28B71AA2007B190D /* SearchBar.swift in Sources */,
 				60E3476028B662D1007B190D /* ContentView.swift in Sources */,
 				60E3477928B66D41007B190D /* URLSession+Cache.swift in Sources */,
 				60E3477328B66B1F007B190D /* Injection.swift in Sources */,
 				60E3477628B66CE4007B190D /* Service.swift in Sources */,
 				60E3478128B66EEF007B190D /* Bundle+Wrapper.swift in Sources */,
+				60E347A828B70A71007B190D /* SectionType.swift in Sources */,
 				60E3478328B66F0F007B190D /* Response.swift in Sources */,
 				60E3479128B68A1F007B190D /* String+Localization.swift in Sources */,
 				60E3475E28B662D1007B190D /* PaythruApp.swift in Sources */,
 				60E3478728B673D8007B190D /* Country.swift in Sources */,
+				60E347AA28B70CE8007B190D /* Label+Section.swift in Sources */,
 				60E3477228B66B1F007B190D /* CancelBag.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -541,7 +561,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.blueantcorp.Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -561,7 +581,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.blueantcorp.Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

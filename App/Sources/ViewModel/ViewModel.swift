@@ -7,27 +7,34 @@
 
 import Foundation
 import Combine
+import SwiftUI
 
 // MARK: -
 final class ViewModel: ObservableObject {
 
-    @Published
-    var items = [Country]()
+    @Published var items = [Country]()
+    @Published var name = ""
+    @Published var showingSheet = false
+    @Published var showFullHistory = false
 
     @Injected(\.service)
     private var service: Service
 
     @BundleBacked<String>(key: "api-url")
-    private var baseurl
+    private var baseurl: String?
 
     private var cache = [String: Response]()
     private var cancelBag = CancelBag()
 
     init() { cache.load() }
 
-    func search(name: String) {
+    func search() {
+
+        items = [Country]()
+
         if let item = cache[name] {
             items = item.country
+            showingSheet.toggle()
         } else {
             service.get(url(name: name))
                 .decode(type: Response.self, decoder: JSONDecoder())
@@ -38,9 +45,38 @@ final class ViewModel: ObservableObject {
                     self?.items = item.country
                     self?.cache[item.name] = item
                     self?.cache.save()
+                    self?.showingSheet.toggle()
                 }
                 .store(in: cancelBag)
         }
+    }
+
+    var history: [Response] {
+        showFullHistory ? cache.toArray():Array(cache.toArray()[0...2])
+    }
+
+    var isActive: Bool {
+        name != ""
+    }
+
+    var opacity: Double {
+        isActive ? 1:0
+    }
+
+    var padding: Double {
+        isActive ? 0:-200
+    }
+}
+
+// MARK: - Actions
+extension ViewModel {
+
+    func clear() {
+        name = ""
+    }
+
+    func close() {
+        showingSheet.toggle()
     }
 }
 
