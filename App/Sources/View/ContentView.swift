@@ -14,27 +14,11 @@ struct ContentView: View {
 
     var body: some View {
         SearchBar(viewModel: viewModel) {
-            results()
-        }.padding(40)
-    }
-}
-
-// MARK: - UI
-extension ContentView {
-    private func results() -> some View {
-        NavigationView {
-            List {
+            ContriesList(viewModel: viewModel) {
                 SearchSection(viewModel: viewModel)
                 HistorySection(viewModel: viewModel)
             }
-            .listStyle(.insetGrouped)
-            .navigationBarTitleDisplayMode(.large)
-            .toolbar {
-                ToolbarItem(placement: .confirmationAction) {
-                    Button(~"CLOSE", action: viewModel.close)
-                }
-            }
-        }
+        }.padding(40)
     }
 }
 
