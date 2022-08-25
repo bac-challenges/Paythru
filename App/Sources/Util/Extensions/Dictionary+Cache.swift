@@ -8,6 +8,7 @@
 import Foundation
 
 extension Dictionary where Key == String, Value == Response {
+
     func save() {
         if let data = try? PropertyListEncoder().encode(self) {
             UserDefaults.standard.set(data, forKey: "local-cache")
@@ -19,5 +20,9 @@ extension Dictionary where Key == String, Value == Response {
            let dict = try? PropertyListDecoder().decode([String: Response].self, from: data) {
             self = dict
         }
+    }
+
+    func toArray() -> [Response] {
+        self.map { $1 }
     }
 }
