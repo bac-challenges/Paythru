@@ -29,8 +29,6 @@ final class ViewModel: ObservableObject {
 
     func search() {
 
-        items = [Country]()
-
         if let item = cache[name] {
             items = item.country
         } else {
@@ -49,7 +47,7 @@ final class ViewModel: ObservableObject {
     }
 
     var history: [Response] {
-        showingFullHistory ? cache.toArray():Array(cache.toArray()[0...2])
+        showingFullHistory ? cache.toArray():Array(cache.toArray()[safe: 0..<3])
     }
 
     var historyCount: Int {

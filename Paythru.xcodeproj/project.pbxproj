@@ -30,6 +30,7 @@
 		60E347B428B72477007B190D /* ContriesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E347B328B72477007B190D /* ContriesList.swift */; };
 		60E347B628B72C28007B190D /* SectionContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E347B528B72C28007B190D /* SectionContainer.swift */; };
 		60E347B828B75305007B190D /* SearchRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E347B728B75305007B190D /* SearchRow.swift */; };
+		60E347BC28B7A58A007B190D /* Array+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E347BB28B7A58A007B190D /* Array+Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		60E347B328B72477007B190D /* ContriesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContriesList.swift; sourceTree = "<group>"; };
 		60E347B528B72C28007B190D /* SectionContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionContainer.swift; sourceTree = "<group>"; };
 		60E347B728B75305007B190D /* SearchRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRow.swift; sourceTree = "<group>"; };
+		60E347BB28B7A58A007B190D /* Array+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Utils.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 			children = (
 				60E3477828B66D41007B190D /* URLSession+Cache.swift */,
 				60E3478B28B67599007B190D /* Dictionary+Cache.swift */,
+				60E347BB28B7A58A007B190D /* Array+Utils.swift */,
 				60E3479028B68A1F007B190D /* String+Localization.swift */,
 				60E347A928B70CE8007B190D /* Label+Section.swift */,
 			);
@@ -378,6 +381,7 @@
 				60E347B128B7234D007B190D /* HistorySection.swift in Sources */,
 				60E347B628B72C28007B190D /* SectionContainer.swift in Sources */,
 				60E347B428B72477007B190D /* ContriesList.swift in Sources */,
+				60E347BC28B7A58A007B190D /* Array+Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
