@@ -12,6 +12,8 @@ struct ContriesList<Content: View>: View {
     @ObservedObject
     var viewModel: ViewModel
 
+    @Environment(\.dismiss) var dismiss
+
     let content: Content
 
     init(viewModel: ViewModel, @ViewBuilder content: () -> Content) {
@@ -27,7 +29,7 @@ struct ContriesList<Content: View>: View {
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
                     ToolbarItem(placement: .confirmationAction) {
-                        Button(~"CLOSE", action: viewModel.close)
+                        Button(~"CLOSE") { dismiss() }
                     }
                 }
         }

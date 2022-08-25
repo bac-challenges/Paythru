@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		60E3475E28B662D1007B190D /* PaythruApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E3475D28B662D1007B190D /* PaythruApp.swift */; };
-		60E3476028B662D1007B190D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E3475F28B662D1007B190D /* ContentView.swift */; };
 		60E3476228B662D3007B190D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60E3476128B662D3007B190D /* Assets.xcassets */; };
 		60E3476C28B6638D007B190D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 60E3476B28B6638D007B190D /* README.md */; };
 		60E3477228B66B1F007B190D /* CancelBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E3477028B66B1F007B190D /* CancelBag.swift */; };
@@ -46,7 +45,6 @@
 /* Begin PBXFileReference section */
 		60E3475A28B662D1007B190D /* Paythru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paythru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60E3475D28B662D1007B190D /* PaythruApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaythruApp.swift; sourceTree = "<group>"; };
-		60E3475F28B662D1007B190D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		60E3476128B662D3007B190D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60E3476B28B6638D007B190D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		60E3477028B66B1F007B190D /* CancelBag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelBag.swift; sourceTree = "<group>"; };
@@ -186,7 +184,6 @@
 		60E3477E28B66EA5007B190D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				60E3475F28B662D1007B190D /* ContentView.swift */,
 				60E347AC28B71AA2007B190D /* SearchBar.swift */,
 				60E347B328B72477007B190D /* ContriesList.swift */,
 				60E347B228B72460007B190D /* ListSections */,
@@ -232,8 +229,8 @@
 			children = (
 				60E347B528B72C28007B190D /* SectionContainer.swift */,
 				60E347AE28B722BB007B190D /* SearchSection.swift */,
-				60E347B028B7234D007B190D /* HistorySection.swift */,
 				60E347B728B75305007B190D /* SearchRow.swift */,
+				60E347B028B7234D007B190D /* HistorySection.swift */,
 			);
 			path = ListSections;
 			sourceTree = "<group>";
@@ -365,7 +362,6 @@
 				60E3478C28B67599007B190D /* Dictionary+Cache.swift in Sources */,
 				60E3477C28B66E3F007B190D /* ViewModel.swift in Sources */,
 				60E347AD28B71AA2007B190D /* SearchBar.swift in Sources */,
-				60E3476028B662D1007B190D /* ContentView.swift in Sources */,
 				60E3477928B66D41007B190D /* URLSession+Cache.swift in Sources */,
 				60E3477328B66B1F007B190D /* Injection.swift in Sources */,
 				60E3477628B66CE4007B190D /* Service.swift in Sources */,

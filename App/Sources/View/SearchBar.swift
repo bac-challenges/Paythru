@@ -10,7 +10,10 @@ import SwiftUI
 struct SearchBar<Content: View>: View {
 
     @ObservedObject
-    var viewModel: ViewModel
+    private var viewModel: ViewModel
+
+    @State
+    private var showingSheet = false
 
     let content: Content
 
@@ -26,9 +29,12 @@ struct SearchBar<Content: View>: View {
                 .foregroundColor(.accentColor)
                 .textCase(.lowercase)
                 .animation(.easeIn, value: viewModel.opacity)
-                .onSubmit { viewModel.search() }
+                .onSubmit { search() }
                 .overlay(alignment: .trailing) {
-                    Button(action: viewModel.clear) {
+
+                    Button {
+                        Task { await viewModel.clear() }
+                    } label: {
                         Image(systemName: "xmark.circle")
                     }
                     .foregroundColor(.accentColor)
@@ -36,14 +42,17 @@ struct SearchBar<Content: View>: View {
                     .padding(.trailing, 5)
                 }
 
-            Button(~"SEARCH", action: viewModel.search)
+            Button(~"SEARCH", action: search)
                 .opacity(viewModel.opacity)
                 .padding(.trailing, viewModel.padding)
                 .animation(.easeIn, value: viewModel.opacity)
                 .animation(.easeIn, value: viewModel.padding)
-                .sheet(isPresented: $viewModel.showingSheet) {
-                    content
-                }
+                .sheet(isPresented: $showingSheet) { content }
         }
+    }
+
+    private func search() {
+        showingSheet.toggle()
+        viewModel.search()
     }
 }

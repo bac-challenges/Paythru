@@ -9,13 +9,12 @@ import Foundation
 import Combine
 import SwiftUI
 
-// MARK: -
+@MainActor
 final class ViewModel: ObservableObject {
 
     @Published var items = [Country]()
     @Published var name = ""
-    @Published var showingSheet = false
-    @Published var showFullHistory = false
+    @Published private(set) var showingFullHistory = false
 
     @Injected(\.service)
     private var service: Service
@@ -34,25 +33,23 @@ final class ViewModel: ObservableObject {
 
         if let item = cache[name] {
             items = item.country
-            showingSheet.toggle()
         } else {
             service.get(url(name: name))
                 .decode(type: Response.self, decoder: JSONDecoder())
-                .receive(on: DispatchQueue.main)
+                .receive(on: RunLoop.main)
                 .sink { error in
                     print(error)
                 } receiveValue: { [weak self] item in
                     self?.items = item.country
                     self?.cache[item.name] = item
                     self?.cache.save()
-                    self?.showingSheet.toggle()
                 }
                 .store(in: cancelBag)
         }
     }
 
     var history: [Response] {
-        showFullHistory ? cache.toArray():Array(cache.toArray()[0...2])
+        showingFullHistory ? cache.toArray():Array(cache.toArray()[0...2])
     }
 
     var historyCount: Int {
@@ -75,12 +72,17 @@ final class ViewModel: ObservableObject {
 // MARK: - Actions
 extension ViewModel {
 
-    func clear() {
-        name = ""
+    func showFullHistory() async {
+        showingFullHistory.toggle()
     }
 
-    func close() {
-        showingSheet.toggle()
+    func showHistory(_ item: Response) async {
+        name = item.name
+        items = item.country
+    }
+
+    func clear() async {
+        name = ""
     }
 }
 

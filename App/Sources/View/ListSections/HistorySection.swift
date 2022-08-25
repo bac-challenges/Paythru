@@ -17,14 +17,17 @@ struct HistorySection: View {
     }
 
     private func row(_ item: Response) -> some View {
-        Label(item.name, systemImage: "person.crop.circle")
+        Button {
+            Task { await viewModel.showHistory(item) }
+        } label: {
+            Label(item.name, systemImage: "person.crop.circle")
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
+        }
     }
 
     private func action() -> some View {
-        Button(viewModel.showFullHistory ? ~"SHOW_SHORT_HISTORY":~"SHOW_FULL_HISTORY") {
-            withAnimation {
-                viewModel.showFullHistory.toggle()
-            }
+        Button(viewModel.showingFullHistory ? ~"SHOW_SHORT_HISTORY":~"SHOW_FULL_HISTORY") {
+            Task { await viewModel.showFullHistory() }
         }
         .multilineTextAlignment(.center)
         .frame(maxWidth: .infinity)

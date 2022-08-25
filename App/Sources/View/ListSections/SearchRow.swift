@@ -14,7 +14,9 @@ struct SearchRow: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text(~"COUNTRY" + ": \(item.code)").foregroundColor(.secondary)
-            Text(String(format: ~"PROBABILITY", item.probability)).foregroundColor(.secondary)
+            Text(String(format: ~"PROBABILITY", item.probability))
+                .foregroundColor(.secondary)
+                .font(.footnote)
         }
     }
 }
